@@ -5,8 +5,7 @@ FROM node:17.8.0
 # Set the working directory in the Docker image
 WORKDIR /usr/src/app
 
-# Clone your GitHub repository into the Docker image
-RUN git clone https://github.com/XcmSend/app-v0.0.1.git
+RUN git clone https://github.com/XcmSend/app.git
 
 # Set the working directory to your React project folder
 WORKDIR /usr/src/app/app-v0.0.1
