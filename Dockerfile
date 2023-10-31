@@ -8,7 +8,7 @@ WORKDIR /usr/src/app
 RUN git clone https://github.com/XcmSend/app.git
 
 # Set the working directory to your React project folder
-WORKDIR /usr/src/app/app-v0.0.1
+WORKDIR /usr/src/app/app
 
 RUN npm install -f
 
