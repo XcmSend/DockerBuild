@@ -12,6 +12,8 @@ WORKDIR /usr/src/app/app-v0.0.1
 
 RUN npm install -f
 
+RUN npm run build  
+
 # Expose the port 
 EXPOSE 5173 
 
