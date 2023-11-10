@@ -11,5 +11,5 @@ $ docker run -d -p 8080:8080 xcmsend
 
 ## Get directly from Docker hub:
 ```
-$ docker pull xcmsend/xcmsend:v0.0.1
+$ docker pull xcmsend/xcmsend:v0.0.6
 ```
