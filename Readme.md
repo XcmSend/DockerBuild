@@ -8,6 +8,8 @@ $ docker build -t xcmsend .
 $ docker run -d -p 8080:8080 xcmsend
 ```
 
+### Notes:  
+-  For bagpipes v0.1.0 and above, the docker host needs a bit more than 3gb of ram(can alternatively just give the image 10gb in swap)
 
 ## Get directly from Docker hub:
 ```
