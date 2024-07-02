@@ -1,6 +1,6 @@
 # Use an official Node.js runtime as the base image
 # check your local version with node --version
-FROM node:17.8.0
+FROM node:18.20.3
 
 # Set the working directory in the Docker image
 WORKDIR /usr/src/app
@@ -16,6 +16,10 @@ RUN npm run build
 
 # Expose the port 
 EXPOSE 5173 
+# clean package cache on the debian image
+RUN apt-get clean                                                      
+RUN rm -rf /var/lib/apt/lists/*                                        
+RUN apt-get update                                                     
 
 # Install Nginx
 RUN apt-get update && apt-get install -y nginx
