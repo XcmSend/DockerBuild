@@ -10,7 +10,7 @@ RUN git clone https://github.com/XcmSend/app.git
 
 # Set the working directory to your React project folder
 WORKDIR /usr/src/app/app
-
+RUN npm config set force true
 RUN npm install -f
 
 RUN npm run build  
