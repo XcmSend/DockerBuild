@@ -12,8 +12,8 @@ RUN git clone https://github.com/XcmSend/app.git
 WORKDIR /usr/src/app/app
 RUN npm config set force true
 RUN npm install -f
-
-RUN npm run build  
+RUN npx papi add -n polkadot custompolkadot
+#RUN npm run build  
 
 # Expose the port 
 EXPOSE 5173 
