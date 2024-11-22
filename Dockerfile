@@ -1,6 +1,7 @@
 # Use an official Node.js runtime as the base image
 # check your local version with node --version
-FROM node:18.20.3
+FROM node:20
+# old 18.20.3
 
 # Set the working directory in the Docker image
 WORKDIR /usr/src/app
